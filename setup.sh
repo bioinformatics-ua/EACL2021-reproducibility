@@ -19,7 +19,7 @@ unzip $ZIP_FILE
 # PYTHON DEPENDENCIES
 PYTHON=python3
 
-echo "Creating a python environment (eacl2021)"
+echo "Creating a python environment (eacl2021-env)"
 $PYTHON -m venv eacl2021-env
 
 PYTHON=$(pwd)/eacl2021-env/bin/python
@@ -44,4 +44,13 @@ $PYTHON setup.py sdist
 $PIP install ./dist/mmnrm-0.0.2.tar.gz
 cd ../../
 
+echo "Manually install nir python library"
+cd _other_dependencies/nir/
 
+if [ -d "./dist" ]
+then
+	rm -r ./dist
+fi
+$PYTHON setup.py sdist
+$PIP install ./dist/nir-0.0.1.tar.gz
+cd ../../

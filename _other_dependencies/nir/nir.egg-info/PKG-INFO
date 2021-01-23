@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: nir
+Version: 0.0.1
+Summary: tools for neural IR aplications
+Home-page: https://github.com/T-Almeida/DL-IR-tools
+Author: Tiago Almeida
+Author-email: tiagomeloalmeida@ua.pt
+License: MIT
+Description: UNKNOWN
+Keywords: nir,tokenization
+Platform: UNKNOWN

@@ -1,0 +1,13 @@
+README.md
+setup.py
+nir/__init__.py
+nir/embeddings.py
+nir/logger.py
+nir/sentence_helper.py
+nir/tokenizers.py
+nir/utils.py
+nir.egg-info/PKG-INFO
+nir.egg-info/SOURCES.txt
+nir.egg-info/dependency_links.txt
+nir.egg-info/requires.txt
+nir.egg-info/top_level.txt

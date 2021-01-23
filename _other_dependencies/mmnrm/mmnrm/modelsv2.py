@@ -42,7 +42,7 @@ def mish(inputs):
     return inputs * tf.math.tanh(tf.math.softplus(inputs))
 
 @savable_model
-def deep_rank(max_q_length=30,
+def shallow_interaction_model(max_q_length=30,
               max_s_per_q_term=5,
               max_s_length=30,
               emb_matrix=None,
