@@ -13,7 +13,7 @@ echo "model_type,batch_size,avg_time,std_time,median_time" > $1
 # test our model
 for batch_size in 16 32 64 128; do
     echo RUNNING ours $batch_size
-    CUDA_VISIBLE_DEVICES="0" $PYTHON test-inference-ours.py $batch_size -o $1
+    CUDA_VISIBLE_DEVICES="0" $PYTHON our-model-inference-test.py $batch_size -o $1
 done
 
 for model_type in 'distilbert' 'bert_x12' 'bert_x24' 'albert_v2_x12' 'longformer_x12'; do

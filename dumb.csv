@@ -1,0 +1,2 @@
+model_type,batch_size,avg_time,std_time,median_time
+bert_x12,16,28.214,5.775,24.379
