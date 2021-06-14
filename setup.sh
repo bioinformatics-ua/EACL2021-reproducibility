@@ -16,6 +16,10 @@ echo "Starting the unziping"
 unzip $ZIP_FILE
 
 
+if [ -d "$(pwd)/eacl2021-env" ]; then
+	mv $(pwd)/eacl2021-env $(pwd)/_temp_rm_eacl2021-env
+fi
+
 # PYTHON DEPENDENCIES
 PYTHON=python3.6
 
