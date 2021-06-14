@@ -17,7 +17,7 @@ unzip $ZIP_FILE
 
 
 # PYTHON DEPENDENCIES
-PYTHON=python3
+PYTHON=python3.6
 
 echo "Creating a python environment (eacl2021-env)"
 $PYTHON -m venv eacl2021-env
